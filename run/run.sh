@@ -14,7 +14,7 @@ cd ~/ramdisk/plundervolt/sgx_crt_rsa/
 
 for i in {100..300}
 do
-    echo undervolt: $i
+    echo undervolt: $1
     sleep 1
-    sudo ./app 1000000000 -$i
+    sudo ./app 1000000000 $1
 done
