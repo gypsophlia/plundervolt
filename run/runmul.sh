@@ -13,5 +13,5 @@ grep "microco" /proc/cpuinfo
 # run multiply
 cd ~/ramdisk/plundervolt/faulting_multiplications/
 
-sudo ./operation -i 1000000000 -s -175 -X 500 -1 0xae0000 -2 0x18
+sudo ./operation -i 1000000000 -s -100 -X 500 -1 0xae0000 -2 0x18
 
