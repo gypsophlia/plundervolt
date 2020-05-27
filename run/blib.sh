@@ -7,7 +7,7 @@ sudo add-apt-repository universe
 sudo add-apt-repository multiverse
 
 sudo apt update
-sudo apt install -y git build-essential libncurses5-dev libncursesw5-dev curl
+sudo apt install -y git build-essential libncurses5-dev libncursesw5-dev curl linux-tools-common lm-sensors 
 sudo modprobe msr
 
 # make a ramdisk

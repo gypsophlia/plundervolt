@@ -1,4 +1,15 @@
-#/bin/bash
+#!/bin/bash
+f=3Ghz
+sudo cpupower -c all frequency-set -u $f
+sudo cpupower -c all frequency-set -d $f
+
+echo "Sleeping to take effect.."
+sleep 1
+echo "Checking frequency..."
+grep "cpu MHz" /proc/cpuinfo
+
+grep "microco" /proc/cpuinfo
+
 cd ~/ramdisk/plundervolt/sgx_crt_rsa/
 
 for i in {100..300}
