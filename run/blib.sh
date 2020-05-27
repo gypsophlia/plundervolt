@@ -39,8 +39,7 @@ sudo make clean load
 cd ../../sgx_crt_rsa
 make
 
-
-#cd ./plundervolt/faulting_multiplications
-#make
-#sudo ./operation -i 1000000000 -s -175 -X 500 -1 0xae0000 -2 0x18
+# compile multiply
+cd ../faulting_multiplications
+make
 
